@@ -179,7 +179,8 @@ dd.left{
 }
 
 .focus-img.advertisement li {
-padding: 20px 31px;
+    width: 100%;
+    padding: 20px 31px;
 transition: box-shadow 0.3s ease-in-out;
 }
 

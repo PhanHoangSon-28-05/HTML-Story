@@ -1,0 +1,54 @@
+body{
+    background-color: rgb(247,247,252);
+    overflow-x: hidden;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.img {
+    background-image: url(https://imgservices-1252317822.image.myqcloud.com/coco/s06132023/56f0d33e.pa0kaq.svg);
+    background-repeat: no-repeat;
+    background-size: 140px 28px;
+    display: inline-block;
+    height: 28px;
+    width: 140px;
+}
+
+.title-bar-1 a {
+    font-size: 15px;
+    padding: 0px 3px;
+}
+
+.title-bar-1 a:hover {
+    color: red;
+}
+
+.book-image img{
+    height: 100%;
+    width: 80%;
+    background-size: cover;
+    background-position: center;
+  }
+
+.row.border-3, .story_hot{
+    background-color: #FFFFFF;
+}
+
+.m-newest2 a:hover {
+    color: rgb(89, 112, 240);
+    text-decoration: underline;
+}
+
+.story_hot{
+    border-bottom: 1px dotted #ebe8e8;
+}
+  
