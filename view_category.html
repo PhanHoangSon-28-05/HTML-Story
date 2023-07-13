@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    
+    <link rel="stylesheet" href="/css/view_category.css">
+    <link rel="stylesheet" href="css/scrollToTop.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><i class="fas fa-home"></i> Home</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-user"></i> Tác giả</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">|</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"><i class="fas fa-bell"></i> Thông báo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">|</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"><i class="fas fa-phone"></i> Liên hệ</a>
+                    </li>
+                </ul>
+              </div>
+              <div class="col-lg-2">
+                <div class="sign-out">
+                    <a id="login-btn" class="black" href="javascript:" data-eid="qd_A06">Đăng nhập</a>
+                    <em>|</em>
+                    <a id="reg-btn" href="" rel="nofollow" target="_blank" data-eid="qd_A07">Đăng ký</a>
+                </div>
+            </div>
+            </div>
+          </nav>
+          <div class="container pt-2">
+            <div class="row">
+              <div class="col-lg-4 col-md-4 col-sm-12 text-start">
+                <a href="">
+                    <img src="image/Icons8-Windows-8-Printing-Books.512.png" width="50px" alt="Logo" class="img-fluid">
+                    <img src="image/Icons8-Windows-8-Printing-Books.512.png" width="50px" alt="Logo" class="img-fluid">
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-12 d-flex text-center">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Tìm kiếm">
+                    <button type="button" class="btn btn-outline-primary"><i class="fas fa-search"></i></button>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-12 text-end mt-2">
+                <button class="btn btn-outline-danger"><i class="fas fa-book"></i> Đăng truyện</button>
+              </div>
+            </div>
+          </div>      
+    </header>
+
+    <page-body>
+        <nav class="navbar navbar-expand-lg mt-3 mb-1 text-black">
+            <div class="container">
+              <div class=" navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav other-categories">
+                    <li class="nav-item dropdown a">
+                        <a class="nav-link dropdown-toggle list" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <i class="fas fa-th-list"></i> Danh Sách
+                        </a>
+                        <ul class="dropdown-menu a">
+                          <li class="dropdown-item">Truyện Mới</li>
+                          <li class="dropdown-item">Truyện Hot</li>
+                          <li class="dropdown-item">Truyện Full - Hoàn Thành</li>
+                        </ul>
+                      </li>
+                    <li class="nav-item dropdown b">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fas fa-th-list"></i> Thể loại
+                        </a>
+                        <ul class="dropdown-menu b">
+                            <li class="d-inline-flex p-1">Item 1</li>
+                            <li class="d-inline-flex p-1">Item 2</li>
+                            <li class="d-inline-flex p-1">Item 3</li>
+                            <li class="d-inline-flex p-1">Item 4</li>
+                        </ul>
+                    </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <div class="cur" itemscope itemtype="https://schema.org/BreadcrumbList">
+            <div class="container">
+                <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a itemprop="item" href="https://truyentumlum.com" class="Đọc truyện Online" title="Đọc truyện Online">
+                        <span class="glyphicon glyphicon-home"></span>
+                        <span itemprop="name"><i class="fas fa-home"></i> Truyện</span>
+                    </a>
+                    <meta itemprop="position" content="1">
+                </span>
+                <i> > </i>
+                <span>
+                    <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                        <a itemprop="item" href="https://truyentumlum.com/the-loai/truyen-nu-cuong/" title="Nữ Cường" class="active">
+                            <span itemprop="name">Nữ Cường</span>
+                        </a>
+                        <meta itemprop="position" content="2">
+                    </span>
+                </span>
+            </div>
+          </div>
+          
+          <div class="categori">
+            <h2 class="text-center"><i class="fas fa-th-list"></i> Categori</h2>
+          </div>
+        <div class="content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 col-md-2 col-sm-1">
+                        <div class="row physical-condition">
+                            <div class="col">
+                                <div class="btn-container">
+                                    <button id="btn1" class="btn active" onclick="showContent(1)">Hot</button>
+                                    <button id="btn2" class="btn" onclick="showContent(2)">View</button>
+                                    <button id="btn3" class="btn" onclick="showContent(3)">New</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div id="content1" class="content-physical-hot" >
+                            <div class="list-group">
+                                <h5 class="">Truyện</h5>
+                                <div class="list-group">
+                                    <ul class="">
+                                        <li class="d-inline-flex p-1">
+                                            <img src="https://bookcover.yuewen.com/qdbimg/349573/1036370336/90.webp" alt="Cùng Trời Với Thú">
+                                            <div class="book-details">
+                                                <h4 class="book-title">Cùng Trời Với Thú</h4>
+                                                <p class="book-info"><i class="fas fa-th-list"></i> <span>Kiếm hiệp</span>, <span>Ngôn tình</span></p>
+                                                <p class="book-info"><i class="fas fa-book"></i> <span>1000 chương</span></p>
+                                                <p class="book-info">Reads: 1000</p>
+                                            </div>
+                                        </li>
+                                        <li class="d-inline-flex p-1">
+                                            <img src="https://bookcover.yuewen.com/qdbimg/349573/1036370336/90.webp" alt="Cùng Trời Với Thú">
+                                            <div class="book-details">
+                                                <h4 class="book-title">Cùng Trời Với Thú</h4>
+                                                <p class="book-info">Reads: 1000</p>
+                                            </div>
+                                        </li>
+                                        <li class="d-inline-flex p-1">
+                                            <img src="https://bookcover.yuewen.com/qdbimg/349573/1036370336/90.webp" alt="Cùng Trời Với Thú">
+                                            <div class="book-details">
+                                                <h4 class="book-title">Cùng Trời Với Thú</h4>
+                                                <p class="book-info">Reads: 1000</p>
+                                            </div>
+                                        </li>
+                                        <li class="d-inline-flex p-1">
+                                            <img src="https://bookcover.yuewen.com/qdbimg/349573/1036370336/90.webp" alt="Cùng Trời Với Thú">
+                                            <div class="book-details">
+                                                <h4 class="book-title">Cùng Trời Với Thú</h4>
+                                                <p class="book-info">Reads: 1000</p>
+                                            </div>
+                                        </li>
+                                        <li class="d-inline-flex p-1">
+                                            <img src="https://bookcover.yuewen.com/qdbimg/349573/1036370336/90.webp" alt="Cùng Trời Với Thú">
+                                            <div class="book-details">
+                                                <h4 class="book-title">Cùng Trời Với Thú</h4>
+                                                <p class="book-info">Reads: 1000</p>
+                                            </div>
+                                        </li>
+                                        <li class="d-inline-flex p-1">
+                                            <img src="https://bookcover.yuewen.com/qdbimg/349573/1036370336/90.webp" alt="Cùng Trời Với Thú">
+                                            <div class="book-details">
+                                                <h4 class="book-title">Cùng Trời Với Thú</h4>
+                                                <p class="book-info">Reads: 1000</p>
+                                            </div>
+                                        </li>
+                                        <li class="d-inline-flex p-1">
+                                            <img src="https://bookcover.yuewen.com/qdbimg/349573/1036370336/90.webp" alt="Cùng Trời Với Thú">
+                                            <div class="book-details">
+                                                <h4 class="book-title">Cùng Trời Với Thú</h4>
+                                                <p class="book-info">Reads: 1000</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="list-group mt-4">
+                                <h5 class="">Thể loại</h5>
+                                <ul class="">
+                                    <li class="d-inline-flex p-1"> <a href="#" class=" btn btn-sm d-inline-flex p-1">Tiểu thuyết</a></li>
+                                    <li class="d-inline-flex p-1"><a href="#" class=" btn btn-sm d-inline-flex p-1">Ngôn tình</a></li>
+                                    <li class="d-inline-flex p-1"><a href="#" class=" btn btn-sm d-inline-flex p-1">Kiếm hiệp</a></li>
+                                    <li class="d-inline-flex p-1">Item 1</li>
+                                    <li class="d-inline-flex p-1">Item 2</li>
+                                    <li class="d-inline-flex p-1">Item 3</li>
+                                    <li class="d-inline-flex p-1">Item 4</li>
+                                </ul>
+                            </div>
+                        </div>
+                            
+                        <div id="content2" class="content-physical-view" style="display: none;">
+                            <div class="list-group ">
+                                <ul class="">
+                                    <li class="d-inline-flex p-1">
+                                        <img src="https://bookcover.yuewen.com/qdbimg/349573/1036370336/90.webp" alt="Cùng Trời Với Thú">
+                                        <div class="book-details">
+                                            <h4 class="book-title">Cùng Trời Với Thú</h4>
+                                            <p class="book-info">Reads: 1000</p>
+                                        </div>
+                                    </li>
+                                    <li class="d-inline-flex p-1">
+                                        <img src="https://bookcover.yuewen.com/qdbimg/349573/1036370336/90.webp" alt="Cùng Trời Với Thú">
+                                        <div class="book-details">
+                                            <h4 class="book-title">Cùng Trời Với Thú</h4>
+                                            <p class="book-info">Reads: 1000</p>
+                                        </div>
+                                    </li>
+                                    <li class="d-inline-flex p-1">
+                                        <img src="https://bookcover.yuewen.com/qdbimg/349573/1036370336/90.webp" alt="Cùng Trời Với Thú">
+                                        <div class="book-details">
+                                            <h4 class="book-title">Cùng Trời Với Thú</h4>
+                                            <p class="book-info">Reads: 1000</p>
+                                        </div>
+                                    </li>
+                                    <li class="d-inline-flex p-1">
+                                        <img src="https://bookcover.yuewen.com/qdbimg/349573/1036370336/90.webp" alt="Cùng Trời Với Thú">
+                                        <div class="book-details">
+                                            <h4 class="book-title">Cùng Trời Với Thú</h4>
+                                            <p class="book-info">Reads: 1000</p>
+                                        </div>
+                                    </li>
+                                    <li class="d-inline-flex p-1">
+                                        <img src="https://bookcover.yuewen.com/qdbimg/349573/1036370336/90.webp" alt="Cùng Trời Với Thú">
+                                        <div class="book-details">
+                                            <h4 class="book-title">Cùng Trời Với Thú</h4>
+                                            <p class="book-info">Reads: 1000</p>
+                                        </div>
+                                    </li>
+                                    <li class="d-inline-flex p-1">
+                                        <img src="https://bookcover.yuewen.com/qdbimg/349573/1036370336/90.webp" alt="Cùng Trời Với Thú">
+                                        <div class="book-details">
+                                            <h4 class="book-title">Cùng Trời Với Thú</h4>
+                                            <p class="book-info">Reads: 1000</p>
+                                        </div>
+                                    </li>
+                                    <li class="d-inline-flex p-1">
+                                        <img src="https://bookcover.yuewen.com/qdbimg/349573/1036370336/90.webp" alt="Cùng Trời Với Thú">
+                                        <div class="book-details">
+                                            <h4 class="book-title">Cùng Trời Với Thú</h4>
+                                            <p class="book-info">Reads: 1000</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                            
+                        <div id="content3" class="content-physical-new" style="display: none;">
+                            <div class="list-group">
+                                <ul class="">
+                                    <li class="d-inline-flex p-1">
+                                        <img src="https://bookcover.yuewen.com/qdbimg/349573/1036370336/90.webp" alt="Cùng Trời Với Thú">
+                                        <div class="book-details">
+                                            <h4 class="book-title">Cùng Trời Với Thú</h4>
+                                            <p class="book-info">Reads: 1000</p>
+                                        </div>
+                                    </li>
+                                    <li class="d-inline-flex p-1">
+                                        <img src="https://bookcover.yuewen.com/qdbimg/349573/1036370336/90.webp" alt="Cùng Trời Với Thú">
+                                        <div class="book-details">
+                                            <h4 class="book-title">Cùng Trời Với Thú</h4>
+                                            <p class="book-info">Reads: 1000</p>
+                                        </div>
+                                    </li>
+                                    <li class="d-inline-flex p-1">
+                                        <img src="https://bookcover.yuewen.com/qdbimg/349573/1036370336/90.webp" alt="Cùng Trời Với Thú">
+                                        <div class="book-details">
+                                            <h4 class="book-title">Cùng Trời Với Thú</h4>
+                                            <p class="book-info">Reads: 1000</p>
+                                        </div>
+                                    </li>
+                                    <li class="d-inline-flex p-1">
+                                        <img src="https://bookcover.yuewen.com/qdbimg/349573/1036370336/90.webp" alt="Cùng Trời Với Thú">
+                                        <div class="book-details">
+                                            <h4 class="book-title">Cùng Trời Với Thú</h4>
+                                            <p class="book-info">Reads: 1000</p>
+                                        </div>
+                                    </li>
+                                    <li class="d-inline-flex p-1">
+                                        <img src="https://bookcover.yuewen.com/qdbimg/349573/1036370336/90.webp" alt="Cùng Trời Với Thú">
+                                        <div class="book-details">
+                                            <h4 class="book-title">Cùng Trời Với Thú</h4>
+                                            <p class="book-info">Reads: 1000</p>
+                                        </div>
+                                    </li>
+                                    <li class="d-inline-flex p-1">
+                                        <img src="https://bookcover.yuewen.com/qdbimg/349573/1036370336/90.webp" alt="Cùng Trời Với Thú">
+                                        <div class="book-details">
+                                            <h4 class="book-title">Cùng Trời Với Thú</h4>
+                                            <p class="book-info">Reads: 1000</p>
+                                        </div>
+                                    </li>
+                                    <li class="d-inline-flex p-1">
+                                        <img src="https://bookcover.yuewen.com/qdbimg/349573/1036370336/90.webp" alt="Cùng Trời Với Thú">
+                                        <div class="book-details">
+                                            <h4 class="book-title">Cùng Trời Với Thú</h4>
+                                            <p class="book-info">Reads: 1000</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>                    
+                    </div>
+                    
+                    <div class="col-lg-8 col-md-8 col-sm-9">
+                        <div class="book-list">
+                            <div class="book-item">
+                                <img src="https://bookcover.yuewen.com/qdbimg/349573/1036370336/90.webp" alt="Cùng Trời Với Thú">
+                                <div class="book-details">
+                                    <h4 class="book-title">Cùng Trời Với Thú</h4>
+                                    <p class="book-info"><i class="fas fa-user"></i> Tác giả</p>
+                                    <p class="book-info"><i class="fas fa-th-list"></i> <span>Kiếm hiệp</span>,<span>Ngôn tình</span></p>
+                                    <p class="book-info"><i class="fas fa-book"></i> <span>1000 chương</span></p>
+                                    <p class="book-info view"><i class="fas fa-book-reader"></i> <span>1000 lượt đọc</span</p>
+                                </div>
+                            </div>
+                            <div class="book-item">
+                                <img src="https://bookcover.yuewen.com/qdbimg/349573/1037088758/90.webp" alt="Book 2">
+                                <div class="book-details">
+                                    <h3 class="book-title">Book 2</h3>
+                                    <p class="book-info">Reads: 500 | Chapters: 30</p>
+                                </div>
+                            </div>
+                            <div class="book-item">
+                                <img src="https://bookcover.yuewen.com/qdbimg/349573/1036370336/90.webp" alt="Cùng Trời Với Thú">
+                                <div class="book-details">
+                                    <h3 class="book-title">Cùng Trời Với Thú</h3>
+                                    <p class="book-info">Reads: 1000 | Chapters: 50</p>
+                                </div>
+                            </div>
+                            <div class="book-item">
+                                <img src="https://bookcover.yuewen.com/qdbimg/349573/1037088758/90.webp" alt="Book 2">
+                                <div class="book-details">
+                                    <h3 class="book-title">Book 2</h3>
+                                    <p class="book-info">Reads: 500 | Chapters: 30</p>
+                                </div>
+                            </div>
+                            <div class="book-item">
+                                <img src="https://bookcover.yuewen.com/qdbimg/349573/1036370336/90.webp" alt="Cùng Trời Với Thú">
+                                <div class="book-details">
+                                    <h3 class="book-title">Cùng Trời Với Thú</h3>
+                                    <p class="book-info">Reads: 1000 | Chapters: 50</p>
+                                </div>
+                            </div>
+                            <div class="book-item">
+                                <img src="https://bookcover.yuewen.com/qdbimg/349573/1037088758/90.webp" alt="Book 2">
+                                <div class="book-details">
+                                    <h3 class="book-title">Book 2</h3>
+                                    <p class="book-info">Reads: 500 | Chapters: 30</p>
+                                </div>
+                            </div>
+                            <div class="book-item">
+                                <img src="https://bookcover.yuewen.com/qdbimg/349573/1036370336/90.webp" alt="Cùng Trời Với Thú">
+                                <div class="book-details">
+                                    <h3 class="book-title">Cùng Trời Với Thú</h3>
+                                    <p class="book-info">Reads: 1000 | Chapters: 50</p>
+                                </div>
+                            </div>
+                            <div class="book-item">
+                                <img src="https://bookcover.yuewen.com/qdbimg/349573/1037088758/90.webp" alt="Book 2">
+                                <div class="book-details">
+                                    <h3 class="book-title">Book 2</h3>
+                                    <p class="book-info">Reads: 500 | Chapters: 30</p>
+                                </div>
+                            </div>
+                            <div class="book-item">
+                                <img src="https://bookcover.yuewen.com/qdbimg/349573/1036370336/90.webp" alt="Cùng Trời Với Thú">
+                                <div class="book-details">
+                                    <h3 class="book-title">Cùng Trời Với Thú</h3>
+                                    <p class="book-info">Reads: 1000 | Chapters: 50</p>
+                                </div>
+                            </div>
+                            <div class="book-item">
+                                <img src="https://bookcover.yuewen.com/qdbimg/349573/1037088758/90.webp" alt="Book 2">
+                                <div class="book-details">
+                                    <h3 class="book-title">Book 2</h3>
+                                    <p class="book-info">Reads: 500 | Chapters: 30</p>
+                                </div>
+                            </div>
+                            <div class="book-item">
+                                <img src="https://bookcover.yuewen.com/qdbimg/349573/1036370336/90.webp" alt="Cùng Trời Với Thú">
+                                <div class="book-details">
+                                    <h3 class="book-title">Cùng Trời Với Thú</h3>
+                                    <p class="book-info">Reads: 1000 | Chapters: 50</p>
+                                </div>
+                            </div>
+                            <div class="book-item">
+                                <img src="https://bookcover.yuewen.com/qdbimg/349573/1037088758/90.webp" alt="Book 2">
+                                <div class="book-details">
+                                    <h3 class="book-title">Book 2</h3>
+                                    <p class="book-info">Reads: 500 | Chapters: 30</p>
+                                </div>
+                            </div>
+                            <div class="book-item">
+                                <img src="https://bookcover.yuewen.com/qdbimg/349573/1036370336/90.webp" alt="Cùng Trời Với Thú">
+                                <div class="book-details">
+                                    <h3 class="book-title">Cùng Trời Với Thú</h3>
+                                    <p class="book-info">Reads: 1000 | Chapters: 50</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="pagination">
+                            <a href="#" class="active">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-2 col-sm-2">
+                        <div class="content-physical-condition" >
+                            <div class="list-group">
+                                <h5 class=""><i class="fas fa-th-list"></i> Thể loại</h5>
+                                <ul class="">
+                                    <li class="d-inline-flex p-1">Item 1</li>
+                                    <li class="d-inline-flex p-1">Item 1</li>
+                                    <li class="d-inline-flex p-1">Item 1</li>
+                                    <li class="d-inline-flex p-1">Item 1</li>
+                                    <li class="d-inline-flex p-1">Item 2</li>
+                                    <li class="d-inline-flex p-1">Item 3</li>
+                                    <li class="d-inline-flex p-1">Item 4</li>
+                                </ul>
+                            </div>
+                            <div class="list-group mt-4">
+                                <h5 class="name-categori-list-book">Truyện categori đang hot <span><i class="fab fa-hotjar"></i> hot</span></h5>
+                                <div class="content-physical-categori-hot">
+                                    <div class="list-group">
+                                        <ul class="">
+                                            <li class="d-inline-flex p-1">
+                                                <img src="https://bookcover.yuewen.com/qdbimg/349573/1036370336/90.webp" alt="Cùng Trời Với Thú">
+                                                <div class="book-details">
+                                                    <h4 class="book-title">Cùng Trời Với Thú</h4>
+                                                    <p class="book-info">Reads: 1000</p>
+                                                </div>
+                                            </li>
+                                            <li class="d-inline-flex p-1">
+                                                <img src="https://bookcover.yuewen.com/qdbimg/349573/1036370336/90.webp" alt="Cùng Trời Với Thú">
+                                                <div class="book-details">
+                                                    <h4 class="book-title">Cùng Trời Với Thú</h4>
+                                                    <p class="book-info">Reads: 1000</p>
+                                                </div>
+                                            </li>
+                                            <li class="d-inline-flex p-1">
+                                                <img src="https://bookcover.yuewen.com/qdbimg/349573/1036370336/90.webp" alt="Cùng Trời Với Thú">
+                                                <div class="book-details">
+                                                    <h4 class="book-title">Cùng Trời Với Thú</h4>
+                                                    <p class="book-info">Reads: 1000</p>
+                                                </div>
+                                            </li>
+                                            <li class="d-inline-flex p-1">
+                                                <img src="https://bookcover.yuewen.com/qdbimg/349573/1036370336/90.webp" alt="Cùng Trời Với Thú">
+                                                <div class="book-details">
+                                                    <h4 class="book-title">Cùng Trời Với Thú</h4>
+                                                    <p class="book-info">Reads: 1000</p>
+                                                </div>
+                                            </li>
+                                            <li class="d-inline-flex p-1">
+                                                <img src="https://bookcover.yuewen.com/qdbimg/349573/1036370336/90.webp" alt="Cùng Trời Với Thú">
+                                                <div class="book-details">
+                                                    <h4 class="book-title">Cùng Trời Với Thú</h4>
+                                                    <p class="book-info">Reads: 1000</p>
+                                                </div>
+                                            </li>
+                                            <li class="d-inline-flex p-1">
+                                                <img src="https://bookcover.yuewen.com/qdbimg/349573/1036370336/90.webp" alt="Cùng Trời Với Thú">
+                                                <div class="book-details">
+                                                    <h4 class="book-title">Cùng Trời Với Thú</h4>
+                                                    <p class="book-info">Reads: 1000</p>
+                                                </div>
+                                            </li>
+                                            <li class="d-inline-flex p-1">
+                                                <img src="https://bookcover.yuewen.com/qdbimg/349573/1036370336/90.webp" alt="Cùng Trời Với Thú">
+                                                <div class="book-details">
+                                                    <h4 class="book-title">Cùng Trời Với Thú</h4>
+                                                    <p class="book-info">Reads: 1000</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>               
+                    </div>
+                </div>
+            </div>          
+        </div>
+    </page-body>
+    <div class="footer" style="text-align: center; margin-top: 15px;">
+        <div class="wp">
+            <div class="ll">
+                <a href="https://truyentumlum.com" title="Truyện Tùm Lum">TruyenTumLum.Com</a>
+                <br>Đọc truyện hay &amp;Đọc truyện online miễn phí 
+            </div>
+            <div class="rr">
+                <a href="/lien-he/" title="Liên hệ">Liên hệ</a>
+                - <a href="/sitemap.xml" title="Sitemap" target="_blank">Sitemap</a>
+                <br>
+                <a href="/trang/tos/" title="Điều khoản sử dụng">Điều khoản sử dụng</a>
+            </div>
+        </div>
+    </div>
+    <a href="#" id="scrollToTop" class="btn btn-primary rounded-circle">
+        <i class="fas fa-arrow-up"></i>
+      </a>
+</body>
+<script src="js/view_category.js"></script>
+<script src="js/scrollToTop.js"></script>
+</html>
